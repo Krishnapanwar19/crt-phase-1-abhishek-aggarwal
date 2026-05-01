@@ -21,3 +21,33 @@ int main(){
     }
     
 }
+
+
+problem no 7 
+nested if less condition 
+smart home lighting
+day motion (yes/no) -- light off
+night -- motion (yes --- 100%) (no--10%)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string dayOrNight;
+    bool motionDetected;
+    
+    cout << "is it Day Or Night?... ";
+    cin >> dayOrNight;
+    cout << "is motion detected?..";
+    cin >> motionDetected;
+    
+    if(dayOrNight == "Night" || dayOrNight == "night"){
+        if(motionDetected){
+            cout << "Turn on LED with 100% brightness";
+        } else {
+            cout << "Turn on LED with 10% brightness";
+        } 
+        }else {
+            cout << "Turn OFF the Light..";
+        }
+}
