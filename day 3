@@ -123,4 +123,20 @@ int main() {
     } 
 }
 
+// problem 9
+// Smart phone unlock
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int password;
+    
+    do{
+        cout << "enter your password here..";
+        cin >> password;
+    } while(password != 1234);
+    
+    cout << "phone unlocked..";
+}
    
