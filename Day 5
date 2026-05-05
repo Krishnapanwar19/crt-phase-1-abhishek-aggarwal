@@ -111,6 +111,25 @@
 //     cout << currencyConvertor(200);
 // }
 
+or 
+
+#include <iostream>
+using namespace std;
+
+float currencyconveerter (float inr){
+    return inr / 92.50; 
+}
+
+
+int main(){
+    float inr;
+    cout <<  "enter inr value";
+    cin >> inr;
+    cout << currencyconveerter(inr) ;
+}
+    
+   
+
 // Program 5
 // function overloading 
 
