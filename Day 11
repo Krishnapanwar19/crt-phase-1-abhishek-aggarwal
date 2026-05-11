@@ -75,3 +75,35 @@ public:
         }
     }
 };
+
+// Binary Palindrome
+
+#include <iostream>
+using namespace std;
+
+bool ispalindrome(string str) {
+    int start = 0;
+    int end = str.size() - 1;
+    while(start < end){
+        if(str[start] != str[end]){
+            return false;
+        }
+        start++;
+        end--;
+    }
+    return true;
+}
+
+int main() {
+    string str;
+    cout << "enter a string..";
+    cin >> str;
+    
+    if(ispalindrome(str)) {
+        cout << "is a palindrome..";
+    }else{
+        cout << "is not a palindrome";
+    }
+    return 0;
+    
+}
